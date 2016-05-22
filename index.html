@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Material Design Lite</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.amber-indigo.min.css" />
+		<style>
+			.demo-card-wide .mdl-card{
+				width:512px;
+			}
+			.demo-card-wide > .mdl-card__title{
+				color:#fff;
+				height:176px;
+				background: url('http://7xu8mu.com1.z0.glb.clouddn.com/wp-content/uploads//2016/05/cropped-banner.jpg')
+			}
+			.demo-card-wide > .mld-card__menu{
+				color:#fff;
+			}
+			i{
+				color:#fff
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Material Design Lite Component</h1>
+		
+		<h2>BADGEs</h2>
+		<!--Number Badge on Icon-->
+		<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">overlap</div><br>
+		<div class="material-icons mdl-badge" data-badge="1">without overlap</div><br />
+		<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="💗">overlap</div>
+		<div class="material-icons mdl-badge" data-badge="1">without overlap</div><br />
+		<a href='#' class="material-badge mdl-badge mdl-badge--no-background" data-badge="12">no-background</a>
+		<table>
+			<caption>Badge Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-badge</td>
+					<td>Defines badge as an MDL component</td>
+					<td>Required on span or link</td>
+				</tr>
+				<tr>
+					<td>mdl-badge--no-background</td>
+					<td>Applies open-circle effect to badge</td>
+					<td>Optional</td>
+				</tr>
+				<tr>
+					<td>mdl-badge--overlap</td>
+					<td>Make the badge overlap with its container</td>
+					<td>Optional</td>
+				</tr>
+				<tr>
+					<td>data-badge='value'</td>
+					<td>Assign string value to badge</td>
+					<td>Not a class, but a seperate attribute; required on span or link</td>
+				</tr>
+			</tbody>
+		</table>		
+		
+		<h2>BUTTONs</h2>
+		<!--Colored  Button-->
+		<button class="mdl-button mdl-js-button mdl-button--colored">
+			<i class="material-icons">Colored</i>
+		</button>
+		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+			<i class="material-icons">Ripple</i>
+		</button>
+		<!--Raised Button-->
+		<button class="mdl-button mdl-js-button mdl-button--raise">
+			Button
+		</button>
+		<!--Icon Button-->
+		<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+			<i class="material-icons">icon</i>
+		</button>
+		<table>
+			<caption>Button Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-button</td>
+					<td>Defines button as MLD component</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>mdl-js-button</td>
+					<td>Assign basic MDL behavior to button</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>none</td>
+					<td>Applies <em>flat</em> display effect to button(default)</td>
+				</tr>
+				<tr>
+					<td>md-button--raised</td>
+					<td>Applies <em>raised</em> display effect</td>
+					<td>Mutually exclusive with fab, mini-tab, and icon</td>
+				</tr>
+				<tr>
+					<td>mdl-button--fab</td>
+					<td>Applies <em>fab</em>(circle) display effect</td>
+					<td>Mutually exclusive with raised, mini-tab, and icon</td>
+				</tr>
+				<tr>
+					<td>mdl-button--mini-fab</td>
+				</tr>
+				<tr>
+					<td>mdl-button--icon</td>
+					<td>Applies <em>icon</em>(small plain circular) display effect</td>
+				</tr>
+				<tr>
+					<td>mdl-button--colored</td>
+					<td>Applies <em>colored</em> display effect(primary or accent color depending on the type of button)</td>
+					<td>Colors are defined in material.min.css</td>
+				</tr>
+				<tr>
+					<td>mdl-button--primary</td>
+					<td>Applies <em>primary</em> color display effect</td>
+				</tr>
+				<tr>
+					<td>mdl-button--accent</td>
+					<td>Applies <em>accent</em> color display effect</td>
+				</tr>
+				<tr>
+					<td>mdl-js-ripple-effect</td>
+					<td>Applies <em>ripple</em> click effect</td>
+					<td>May be used in combination with any other classes</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>CARDs</h2>
+		<!--Wide card with share menu button-->
+		<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">Welcome</h2>
+			</div>
+			<div class="mdl-card__supporting-text">
+				Supporting Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris sagittis pellentesque lacus eleifend lacinia...
+			</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+			</div>
+			<div class="mdl-card__menu">
+				<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">S</i>
+				</button>
+			</div>
+		</div>
+		
+		
+		
+		<script defer src='https://code.getmdl.io/1.1.3/material.min.js'></script>
+	</body>
+</html>
