@@ -171,6 +171,8 @@
 					<td>Effect</td>
 					<td>Remark</td>
 				</tr>
+			</thead>
+			<tbody>
 				<tr>
 					<td>mdl-card</td>
 					<td>Defines div element as an MDL card container</td>
@@ -215,11 +217,175 @@
 					<td>mdl-card__actions</td>
 					<td>Defines div as a card actions container and assigns appropriate text characteristics to actions text</td>
 				</tr>
-			</thead>
+				<tr>
+					<td>mdl-card--expand</td>
+				</tr>
+			</tbody>
 		</table>
 		
+		<h2>DIALOGs</h2>
+		<strong>Note:</strong> Dialogs use the HTML `<dialog>` element, which currently has very limited cross-browser support. To ensure support across all modern browsers, please consider using a polyfill or creating you own. There is no polypill included with MDL.
+		<table>
+			<caption>Dialog Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-dialog</td>
+					<td>Defines the container of the dialog component</td>
+					<td>Required on dialog container</td>
+				</tr>
+				<tr>
+					<td>mdl-dialog__title</td>
+					<td>Defines the title container in the dialog</td>
+					<td>Optional on the title container</td>
+				</tr>
+				<tr>
+					<td>mdl-dialog__content</td>
+					<td>Defines the content container of the dialog</td>
+					<td>Required on content container</td>
+				</tr>
+				<tr>
+					<td>mdl-dialog__actions</td>
+					<td>Defines the actions container in the dialog</td>
+					<td>Required on action container</td>
+				</tr>
+				<tr>
+					<td>mdl-dialog__actions--full-width</td>
+					<td>Modifies the actions to each take the full width of the container. This makes each take their own line</td>
+				</tr>
+			</tbody>
+		</table>
 		
+		<h2>LAYOUT</h2>
+		See Article #
 		
+		<h2>LISTs</h2>
+		<table>
+			<caption>LIST Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remark</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-list</td>
+					<td>Defines list as MDL component</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item</td>
+					<td>Defines the list's Items</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item-tow-line</td>
+					<td>Defines the List's items as a Two Line</td>
+					<td>Optional Two Line List Variant</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item--three-line</td>
+					<td>Defines the List's items as  Three Line</td>
+					<td>Optional Three Line List Variant</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item-primary-content</td>
+					<td>Defines the primary content sub-division</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item-avatar</td>
+					<td>Defines the avatar sub-division</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item-icon</td>
+					<td>Defines the icon sub-division</td>
+				</tr>
+				<tr>
+					<td>mdl-list__secondary-content</td>
+					<td>Defines the icon sub-division</td>
+					<td>Requires mdl-list__item-two-line or mdl-list__item-three-line</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item-secondary-info</td>
+					<td>Defines the information sub-division</td>
+					<td>Requires mdl-list__item-two-line or mdl-list__item-three-lines</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item-secondary-action</td>
+					<td>Defines the Action sub-division</td>
+					<td>Requires mdl-list__item-two-line or mdl-list__item-three-line</td>
+				</tr>
+				<tr>
+					<td>mdl-list__item-text-body</td>
+					<td>Defines the Text Body sub-division</td>
+					<td>Requires mdl-list__item-three-line</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h3>PROGRESSBAR & SPINNER</h3>
+		<table>
+			<caption>PROGRESSBAR Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-js-progress</td>
+					<td>Assign basic MDL behavior to progress indicator</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>mdl-progress--indeteminate</td>
+					<td>Applies animation effect</td>
+					<td>Optional</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<caption>SPINNER Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-spinner</td>
+					<td>Defines the container as an MDL spinner component</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>mdl-js-spinner</td>
+					<td>Assign basic MDL behavior to spinner</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>is-active</td>
+					<td>Make the spinner visible and animated</td>
+					<td>Optional</td>
+				</tr>
+				<tr>
+					<td>mdl-spinner--single-color</td>
+					<td>Uses a single(primary palette) color instead of changing colors</td>
+					<td>Optional</td>
+				</tr>
+			</tbody>
+		</table>
 		<script defer src='https://code.getmdl.io/1.1.3/material.min.js'></script>
 	</body>
 </html>
