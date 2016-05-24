@@ -386,6 +386,487 @@
 				</tr>
 			</tbody>
 		</table>
+		
+		<h2>MENU</h2>
+		<table>
+			<caption>MENU Configuration</caption>
+			<thead>
+				<tr>
+					<tr>MDL Class</tr>
+					<tr>Effect</tr>
+					<tr>Remarks</tr>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-button</td>
+					<td>Defines button as an MDL component</td>
+					<td>Required on button element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-button</td>
+					<td>Assign basic MDL Behavior to button</td>
+					<td>Required on button element</td>
+				</tr>
+				<tr>
+					<td>mdl-button--icon</td>
+					<td>Defines span as material icons</td>
+					<td>Required on an inline element</td>
+				</tr>
+				<tr>
+					<td>mdl-menu</td>
+					<td>Defines an unordered list container as an MDL component</td>
+					<td>Required on ul element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-menu</td>
+					<td>Assign basic MDL behavior to menu</td>
+					<td>Required on ul element</td>
+				</tr>
+				<tr>
+					<td>mdl-menu__item</td>
+					<td>Defines buttons as MDL menu options and assigns basic MDL behavior</td>
+					<td>Required on list item element</td>
+				</tr>
+				<tr>
+					<td>mdl-menu__item--full-bleed-divider</td>
+					<td>Modifies an item to have full bleed divider between it and the next list item</td>
+					<td>Optional on list item elements</td>
+				</tr>
+				<tr>
+					<td>mdl-js-ripple-effect</td>
+					<td>Applies ripple click effect to option links</td>
+					<td>Optional, goes on unordered list element</td>
+				</tr>
+				<tr>
+					<td>mdl-menu--top-left</td>
+					<td>Positions menu above button, aligns left edge of menu with button</td>
+					<td>Optional, goes on unordered list element</td>
+				</tr>
+				<tr>
+					<td>none</td>
+					<td>Positions menu below button, aligns left edge of menu with button</td>
+					<td>Defautl</td>
+				</tr>
+				<tr>
+					<td>mdl-menu--top-right</td>
+					<td>Positions menu above button, aligns right edge of menu with button</td>
+					<td>Optional, goes on unordered list element</td>
+				</tr>
+				<tr>
+					<td>mdl-menu--bottom-right</td>
+					<td>Positions menu below button, align right edge of menu with button</td>
+					<td>Optional, goes on unordered list element</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>SLIDERS</h2>
+		<table>
+			<caption>SLIDER Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remark</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-slider</td>
+					<td>Defines input element as an MDL component</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>mdl-js-slider</td>
+					<td>Assigns basic MDL behavior to input element</td>
+					<td>Required</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>SNACKBAR</h2>
+		<table>
+			<caption>SNACKBAR Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-snackbar</td>
+					<td>Defines the container of the snackbar component</td>
+					<td>Required on snackbar container</td>
+				</tr>
+				<tr>
+					<td>mdl-snackbar__text</td>
+					<td>Defines the element containing the text of the snackbar</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>mdl-snackbar__action</td>
+					<td>Defines the element that triggers the action of a snackbar</td>
+					<td>Required</td>
+				</tr>
+				<tr>
+					<td>mdl-snackbar--active</td>
+					<td>Marks the snackbar as active which causes it to display</td>
+					<td>Required when active. Controlled in JS</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<caption>SNACKBAR DATA OBJECT</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+					<td>Type</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>message</td>
+					<td>The text message to display</td>
+					<td>Required</td>
+					<td>String</td>
+				</tr>
+				<tr>
+					<td>timeout</td>
+					<td>The amount of time in milliseconds to show the snackbar</td>
+					<td>Optional(default 2750)</td>
+					<td>Integer</td>
+				</tr>
+				<tr>
+					<tr>
+						<td>actionHandler</td>
+						<td>The function to execute when the action is clicked</td>
+						<td>Optional</td>
+						<td>Function</td>
+					</tr>
+					<tr>
+						<td>actionText</td>
+						<td>The text to display for the action button</td>
+						<td>Requried if actionHandler is set</td>
+						<td>String</td>
+					</tr>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>TOGGLE</h2>
+		<table>
+			<caption>CHECKBOX Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-checkbox</td>
+					<td>Defines label as an MDL component</td>
+					<td>Required on label element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-checkbox</td>
+					<td>Assign basic MDL behavior to label</td>
+					<td>Requried on label element</td>
+				</tr>
+				<tr>
+					<td>mdl-checkbox__label</td>
+					<td>Applies basic MDL behavior to checkbox</td>
+					<td>Required on input element(Checkbox)</td>
+				</tr>
+				<tr>
+					<td>mdl-checkbox__label</td>
+					<td>Applies basic MDL behavior to caption</td>
+					<td>Required on span element(caption)</td>
+				</tr>
+				<tr>
+					<td>mdl-js-ripple-effect</td>
+					<td>Applies ripple click effect</td>
+					<td>Optional, goes on label element, not input element(checkbox)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<caption>RADIO BUTTON</caption>
+			<thead>
+				<tr>
+					<td>MLD Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-radio</td>
+					<td>Defines label as an MDL component</td>
+					<td>Required on label element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-radio</td>
+					<td>Assign basic MDL behavior to label</td>
+					<td>Required on label element</td>
+				</tr>
+				<tr>
+					<td>mdl-radio__button</td>
+					<td>Applies basic MDL&nbsp;behavior to radio</td>
+					<td>Required on input element(radio button)</td>
+				</tr>
+				<tr>
+					<td>mdl-radio__label</td>
+					<td>Applies basic MDL behavior to caption
+					</td>
+					<td>Required on span element(caption)</td>
+				</tr>
+				<tr>
+					<td>mdl-js-ripple-effect</td>
+					<td>Applies ripple click effect</td>
+					<td>Optional, goes on label element, not input element(radio button)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<caption>ICON TOGGLE</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-icon-toggle</td>
+					<td>Defines label as an MDL component</td>
+					<td>Required on label element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-icon-toggle</td>
+					<td>Assign basic MDL behavior to label</td>
+					<td>Required on label element</td>
+				</tr>
+				<tr>
+					<td>mdl-icon-toggle__input</td>
+					<td>Applies basic MDL behavior to icon-toggle</td>
+					<td>Required on input element(icon-toggle)</td>
+				</tr>
+				<tr>
+					<td>mdl-icon-toggle__label</td>
+					<td>Applies basic MDL behavior to caption</td>
+					<td>Required on i element(icon)</td>
+				</tr>
+				<tr>
+					<td>mdl-js-ripple-effect</td>
+					<td>Applies ripple click effect</td>
+					<td>Optional, goes on label element, not input element(icon-toggle)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<caption>SWITCH&nbsp;Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-switch</td>
+					<td>Defines label as an MDL component</td>
+					<td>Requried on label element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-switch</td>
+					<td>Assigns basic MDL behavior to label</td>
+					<td>Required on label element</td>
+				</tr>
+				<tr>
+					<td>mdl-switch__input</td>
+					<td>Applies basic MDL behavior to switch</td>
+					<td>Required on input element(switch)</td>
+				</tr>
+				<tr>
+					<td>mdl-switch__label</td>
+					<td>Applies basic MDL behavior to caption</td>
+					<td>Required on span element(caption)</td>
+				</tr>
+				<tr>
+					<td>mdl-js-ripple-effect</td>
+					<td>Applies ripple click effect</td>
+					<td>Optional, goes on label element, not input element(switch)</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>TABLEs</h2>
+		<table>
+			<caption>TABLE&nbsp;Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-data-table</td>
+					<td>Defines table as an MDL component</td>
+					<td>Required on table element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-data-table</td>
+					<td>Assigns basic MDL behavior to table</td>
+					<td>Required on table element</td>
+				</tr>
+				<tr>
+					<td>mdl-data-table--selectable</td>
+					<td>Applies all/individual selectable behavior (checkbox)</td>
+					<td>Optional, goes on table element</td>
+				</tr>
+				<tr>
+					<td>mdl-data-table__header-sorted-ascending</td>
+					<td>Applies visual styling to indicate the column is sorted in ascending order</td>
+					<td>Optional, goes on table header(th)</td>
+				</tr>
+				<tr>
+					<td>mdl-data-table__header-sorted-descending</td>
+					<td>Applies visual styling to indicate the column is sorted in descending order</td>
+					<td>Optional, goes on the header(th)</td>
+				</tr>
+				<tr>
+					<td>mdl-data-table__cell--non-numeric</td>
+					<td>Applies text formatting to data cell</td>
+					<td>Optional, goes on both table header and table data cells</td>
+				</tr>
+				<tr>
+					<td>none</td>
+					<td>Applies numeric formatting to header or data cell(default)</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>TEXT FIELDs</h2>
+		<table>
+			<caption>TEXT FIELD Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-textfield</td>
+					<td>Defines container as an MDL component</td>
+					<td>Required on outer div element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-textfield</td>
+					<td>Assigns basic MDL behavior to input</td>
+					<td>Required on outer div element</td>
+				</tr>
+				<tr>
+					<td>mdl-textfield__input</td>
+					<td>Defines element as textfield input</td>
+					<td>Required on label element for input or textarea element</td>
+				</tr>
+				<tr>
+					<td>mdl-textfield--floating-label</td>
+					<td>Applies floating label effect</td>
+					<td>Optional, goes on outer div element</td>
+				</tr>
+				<tr>
+					<td>mdl-textfield__error</td>
+					<td>Defines span as MDL error message</td>
+					<td>Optional, goes on span element for MDL input element with pattern</td>
+				</tr>
+				<tr>
+					<td>mdl-textfield--expandable</td>
+					<td>Defines a div as an MDL expandable text field container</td>
+					<td>For expandable input fields, required on outer div element</td>
+				</tr>
+				<tr>
+					<td>mdl-button</td>
+					<td>Defines label as an MDL icon button</td>
+					<td>For expandable input fields, required on outer div's label element</td>
+				</tr>
+				<tr>
+					<td>mdl-js-button</td>
+					<td>Assigns basic behavior to icon container</td>
+					<td>For expandable input fields, required on outer div's label element</td>
+				</tr>
+				<tr>
+					<td>mdl-button--icon</td>
+					<td>Defines label as an MDL icon container</td>
+					<td>For expandable input fields, required on outer div's label element</td>
+				</tr>
+				<tr>
+					<td>mdl-input__expandable-holder</td>
+					<td>Defines a container as an MDL component</td>
+					<td>For expandable input fields, required on inner div element</td>
+				</tr>
+				<tr>
+					<td>is-invalid</td>
+					<td>Defines the textfield as invalid on initial load</td>
+					<td>Optional, on mdl-textfield element</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>TOOLTIPs</h2>
+		<table>
+			<caption>TOOLTIP Configuration</caption>
+			<thead>
+				<tr>
+					<td>MDL Class</td>
+					<td>Effect</td>
+					<td>Remarks</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>mdl-tooltip</td>
+					<td>Defines a container as an MDL tooltip</td>
+					<td>Required on tooltip container element</td>
+				</tr>
+				<tr>
+					<td>mdl-tooltip--large</td>
+					<td>Applies large-font effect</td>
+					<td>Optional, goes on tooltip container element</td>
+				</tr>
+				<tr>
+					<td>mdl-tooltip--left</td>
+					<td>Positions the tooltip to the left of the target</td>
+					<td>Optional, goes on tooltip container element</td>
+				</tr>
+				<tr>
+					<td>mdl-tooltip--right</td>
+					<td>Positions the tooltip to the right of the target</td>
+					<td>Optional, goes on tooltip container element</td>
+				</tr>
+				<tr>
+					<td>mdl-tooltip--top</td>
+					<td>Positions the tooltip to the top of the target</td>
+					<td>Optional, goes to tooltip container element</td>
+				</tr>
+				<tr>
+					<td>mdl-tooltip--bottom</td>
+					<td>Positions the tooltip to the bottom of the target</td>
+					<td>Optional, goes on tooltip container element</td>
+				</tr>
+			</tbody>
+		</table>
 		<script defer src='https://code.getmdl.io/1.1.3/material.min.js'></script>
 	</body>
 </html>
